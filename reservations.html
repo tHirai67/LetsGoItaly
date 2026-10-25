@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>予約リスト | Roma Trip</title><link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">R</span><span>ROMA <small>TRAVEL NOTES</small></span></a><button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button><nav class="site-nav" aria-label="メインナビゲーション"><a href="index.html">トップ</a><a href="schedule.html">スケジュール</a><a href="spots.html">観光スポット</a><a class="active" href="reservations.html">予約リスト</a></nav></header>
+<main class="page-main">
+<section class="page-hero"><p class="eyebrow">TICKETS & BOOKINGS</p><h1>予約リスト</h1><p>予約の優先度をまとめたチェックリスト。チケット条件や運営ルールは変更されるため、旅行前に公式サイトで再確認してください。</p><div class="legend"><span class="tag tag-book">事前予約推奨／時間指定</span><span class="tag tag-free">通常予約不要</span><span class="tag tag-warn">最新情報を確認</span></div></section>
+<section class="section">
+<div class="table-toolbar"><h2>施設別チェックリスト</h2><label class="search-label" for="reservation-search">検索 <input id="reservation-search" type="search" placeholder="施設名で検索…"></label></div>
+<div class="table-wrap"><table id="reservation-table"><thead><tr><th>施設</th><th>予約の目安</th><th>入場・料金メモ</th><th>公式情報</th><th>確認</th></tr></thead><tbody>
+<tr><td><strong>コロッセオ</strong><small>2/8予定</small></td><td><span class="tag tag-book">事前予約</span><p>時間指定チケットを確保</p></td><td>チケット種別により条件が異なる</td><td><a href="https://ticketing.colosseo.it/en" target="_blank" rel="noopener">公式サイト ↗</a></td><td><label class="check-cell"><input type="checkbox" data-check="colosseum"> 済</label></td></tr>
+<tr><td><strong>フォロ・ロマーノ／パラティーノの丘</strong><small>2/8予定</small></td><td><span class="tag tag-book">共通券を確認</span><p>コロッセオの券種を確認</p></td><td>共通券の対象範囲・入場条件を確認</td><td><a href="https://ticketing.colosseo.it/en" target="_blank" rel="noopener">公式サイト ↗</a></td><td><label class="check-cell"><input type="checkbox" data-check="forum"> 済</label></td></tr>
+<tr><td><strong>バチカン美術館</strong><small>2/9予定</small></td><td><span class="tag tag-book">事前予約推奨</span><p>日時指定チケット</p></td><td>通常日曜休館。訪問日と時間を確認</td><td><a href="https://tickets.museivaticani.va/" target="_blank" rel="noopener">公式サイト ↗</a></td><td><label class="check-cell"><input type="checkbox" data-check="vatican"> 済</label></td></tr>
+<tr><td><strong>パンテオン</strong><small>2/9予定</small></td><td><span class="tag tag-warn">チケット確認</span><p>内部見学の場合</p></td><td>入場料・予約枠・無料対象条件を確認</td><td><a href="https://portale.museiitaliani.it/" target="_blank" rel="noopener">公式案内 ↗</a></td><td><label class="check-cell"><input type="checkbox" data-check="pantheon"> 済</label></td></tr>
+<tr><td><strong>トレヴィの泉</strong><small>2/7予定</small></td><td><span class="tag tag-warn">運用要確認</span><p>エリアによってルールが異なる場合あり</p></td><td>泉の近くのエリアへの入場条件を確認</td><td><a href="https://www.fontanaditrevi.roma.it/en" target="_blank" rel="noopener">公式案内 ↗</a></td><td><label class="check-cell"><input type="checkbox" data-check="trevi"> 済</label></td></tr>
+<tr><td><strong>サン・ピエトロ大聖堂</strong><small>2/9予定</small></td><td><span class="tag tag-free">通常予約不要</span><p>一般入場は通常無料</p></td><td>保安検査・服装規定・特別行事を確認</td><td><a href="https://www.basilicasanpietro.va/en.html" target="_blank" rel="noopener">公式サイト ↗</a></td><td><label class="check-cell"><input type="checkbox" data-check="basilica"> 済</label></td></tr>
+<tr><td><strong>スペイン広場</strong><small>2/7予定</small></td><td><span class="tag tag-free">予約不要</span></td><td>屋外スポット</td><td>—</td><td><label class="check-cell"><input type="checkbox" data-check="spanish"> 済</label></td></tr>
+<tr><td><strong>ナヴォーナ広場</strong><small>2/9予定</small></td><td><span class="tag tag-free">予約不要</span></td><td>屋外広場</td><td>—</td><td><label class="check-cell"><input type="checkbox" data-check="navona"> 済</label></td></tr>
+<tr><td><strong>凱旋門・真実の口</strong><small>2/8予定</small></td><td><span class="tag tag-warn">当日確認</span></td><td>外観・教会の開放時間や待ち時間を確認</td><td>—</td><td><label class="check-cell"><input type="checkbox" data-check="truth"> 済</label></td></tr>
+</tbody></table></div>
+<div class="progress-wrap"><div class="progress-copy"><span>予約確認の進捗</span><strong id="progress-text">0 / 9 件</strong></div><div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div><p class="small muted">チェック状態はこのブラウザ内でのみ保持されます。別の端末や友人と自動同期はされません。</p></div>
+</section></main><footer class="site-footer"><span>ROMA TRAVEL NOTES</span><span>Check official sources before booking.</span></footer>
+</body></html>
