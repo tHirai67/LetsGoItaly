@@ -7,7 +7,7 @@
   <section class="page-hero"><p class="eyebrow">DA FARE · CHECKLIST</p><h1>TODOリスト</h1><p>準備項目をチェック。共有ファイルを書き出して相手に送り、受け取ったファイルを読み込めます。</p></section>
   <section class="section todo-section">
     <div class="todo-heading"><div><p class="eyebrow">PREPARAZIONE</p><h2>忘れずに準備</h2></div><div class="todo-progress"><strong id="todo-count">0 / 5</strong><span>完了</span></div></div>
-    <div class="share-panel"><div><strong>メンバーとTODOを共有</strong><p>書き出したJSONファイルを旅行メンバーに送り、受け取った人はこのページで読み込みます。読み込み時は現在のリストを置き換えます。</p></div><div class="share-actions"><button class="button button-outline" id="export-todos" type="button">共有ファイルを書き出す ↓</button><label class="button button-dark" for="import-todos">共有ファイルを読み込む ↑</label><input id="import-todos" class="visually-hidden" type="file" accept=".json,application/json"></div></div>
+    <div class="share-panel"><div><strong>メンバーとTODOを共有</strong><p>書き出したJSONファイルを旅行メンバーに送り、受け取った人はこのページで読み込みます。読み込み時は現在のリストを置き換えます。</p></div><div class="share-actions"><button class="button button-outline" id="export-todos" type="button">共有ファイルを書き出す ↓</button><button class="button button-dark" id="choose-import" type="button">共有ファイルを読み込む ↑</button><input id="import-todos" class="visually-hidden" type="file" accept=".json,application/json" tabindex="-1" aria-hidden="true"></div></div>
     <form class="todo-form" id="todo-form"><label for="todo-input">タスクを追加</label><div class="todo-entry"><input id="todo-input" type="text" maxlength="120" placeholder="例：空港までの移動を確認" required><button class="button button-dark" type="submit">追加 ＋</button></div></form>
     <p class="status-message" id="todo-status" role="status" aria-live="polite"></p>
     <ul class="todo-list" id="todo-list"></ul>

@@ -214,6 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const count = document.querySelector("#todo-count");
     const input = document.querySelector("#todo-input");
     const exportButton = document.querySelector("#export-todos");
+    const chooseImportButton = document.querySelector("#choose-import");
     const importInput = document.querySelector("#import-todos");
     const storageKey = "italia-trip-todos-v1";
     const defaults = [
@@ -319,6 +320,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    chooseImportButton?.addEventListener("click", () => importInput?.click());
     importInput?.addEventListener("change", async () => {
       const file = importInput.files?.[0];
       if (!file) return;
